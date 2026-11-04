@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b27">
+<title>دفع كباب صلاح</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top,#285b38,#092417 70%);color:#fff;min-height:100vh;display:grid;place-items:center;padding:22px}
+main{width:min(100%,520px);border:2px solid #d6b45a;border-radius:26px;padding:26px 20px;background:linear-gradient(145deg,#17442d,#092719);box-shadow:0 18px 55px #0008;text-align:center}
+h1{color:#f4d77e;font-size:clamp(30px,8vw,42px);margin:0 0 8px;text-shadow:0 2px 8px #0008}
+.sub{color:#f8e9bd;margin:0 0 25px;font-size:17px}
+.method{background:#fff;color:#173322;border-radius:18px;padding:18px;margin:14px 0;border:2px solid #d9bd6b}
+.method h2{margin:0 0 10px;font-size:23px}
+.number{font-size:25px;font-weight:bold;direction:ltr;letter-spacing:1px;margin:8px 0 14px}
+button{border:0;border-radius:12px;padding:13px 18px;font-size:17px;font-weight:bold;background:#caa64a;color:#102719;cursor:pointer;width:100%}
+button:active{transform:scale(.99)}
+.note{font-size:14px;line-height:1.8;color:#f4e9c8;margin:20px 4px 0}
+#status{min-height:24px;color:#ffe59a;font-size:14px;margin-top:10px}
+footer{margin-top:18px;color:#d8c58c;font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <h1>كباب صلاح</h1>
+  <p class="sub">اختار وسيلة الدفع المناسبة</p>
+
+  <section class="method">
+    <h2>InstaPay</h2>
+    <div class="number" id="insta">01125555754</div>
+    <button onclick="copyNumber('insta')">نسخ رقم إنستاباي</button>
+  </section>
+
+  <section class="method">
+    <h2>Vodafone Cash</h2>
+    <div class="number" id="vodafone">01111173444</div>
+    <button onclick="copyNumber('vodafone')">نسخ رقم فودافون كاش</button>
+  </section>
+
+  <p class="note">بعد نسخ الرقم، افتح تطبيق الدفع المختار، أدخل الرقم والمبلغ بنفسك، وراجع اسم المستلم قبل تأكيد التحويل.</p>
+  <div id="status" aria-live="polite"></div>
+  <footer>شكراً لزيارتكم — كباب صلاح</footer>
+</main>
+<script>
+async function copyNumber(id){
+  const value=document.getElementById(id).textContent.trim();
+  const status=document.getElementById('status');
+  try{
+    await navigator.clipboard.writeText(value);
+    status.textContent='تم نسخ الرقم. افتح تطبيق الدفع وأدخل المبلغ.';
+  }catch(e){
+    status.textContent='الرقم: '+value+' — اضغط مطولاً لنسخه.';
+  }
+}
+</script>
+</body>
+</html>
