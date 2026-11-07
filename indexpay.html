@@ -1,35 +1,44 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#20100c">
-<title>كباب صلاح | الصفحة الرسمية</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1b100d"><title>كباب صلاح | الروابط الرسمية</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#102016;color:#f8edcf;font-family:Tahoma,Arial,sans-serif}
-main{max-width:620px;margin:auto;padding:22px 16px 40px}
-header{background:linear-gradient(145deg,#35140f,#160d09);border:2px solid #c9a34c;border-radius:22px;padding:26px 18px;text-align:center;box-shadow:0 8px 24px #0006}
-h1{margin:0;color:#f0cb70;font-size:34px;text-shadow:0 2px 5px #000}header p{margin:9px 0 0;color:#f7e6b6}
-.buttons{display:grid;gap:13px;margin:22px 0}
-a.action,button.action{display:block;width:100%;padding:17px 16px;border:1px solid #d9b75e;border-radius:15px;background:linear-gradient(110deg,#4b2116,#28130f);color:#ffe9ad;text-decoration:none;text-align:center;font-size:19px;font-weight:bold;cursor:pointer}
-a.action small{display:block;font-size:12px;font-weight:normal;color:#dfc98e;margin-top:5px}
-.menu{margin-top:24px;background:#20150e;border:1px solid #c9a34c;border-radius:16px;padding:12px}
-.menu h2{text-align:center;color:#f0cb70;margin:6px 0 12px}
-.menu img{display:block;width:100%;height:auto;border-radius:9px}
-.note{text-align:center;color:#d7c69b;font-size:12px;line-height:1.8;margin-top:16px}
-</style>
-</head>
-<body>
-<main>
-<header><h1>كباب صلاح</h1><p>أهلاً بيكم — أصل الكباب.. أصل الطعم</p></header>
-<section class="buttons">
-<a class="action" href="https://www.facebook.com/share/1N3LEWeHmm/" target="_blank" rel="noopener">صفحة المحل على فيسبوك<small>تابع أخبار وعروض كباب صلاح</small></a>
-<a class="action" href="#menu">منيو المحل<small>شاهد الأصناف والأسعار</small></a>
-<a class="action" href="https://ipn.eg/S/sameh.youssef4681/instapay/10jdOi" target="_blank" rel="noopener">الدفع عبر InstaPay<small>سامح يوسف — sameh.youssef4681@instapay</small></a>
-<button class="action" type="button" onclick="navigator.clipboard.writeText('01111173444').then(()=>alert('تم نسخ رقم محفظة اتصالات كاش: 01111173444')).catch(()=>alert('رقم محفظة اتصالات كاش: 01111173444'))">الدفع عبر اتصالات كاش<small>اضغط لنسخ رقم المحفظة: 01111173444 — سامح يوسف</small></button>
+:root{--gold:#e7c36c;--gold2:#b98b35;--cream:#fff2d1}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--cream);font-family:Tahoma,Arial,sans-serif;background:radial-gradient(ellipse at top,#55301c 0,#24130e 42%,#100b09 100%)}
+main{width:min(100% - 28px,560px);margin:auto;padding:28px 0 42px}
+.hero{text-align:center;padding:25px 18px 21px;border:1px solid #e7c36cbb;border-radius:25px;background:linear-gradient(145deg,#532a16,#180d0a);box-shadow:0 18px 45px #0008}
+.brand-mark{width:86px;height:86px;margin:0 auto 12px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#67401f,#24120d 72%);box-shadow:0 0 0 5px #e7c36c16}
+.brand-mark span{font-weight:900;font-size:19px;line-height:1.25;color:var(--gold)}
+h1{margin:0;color:var(--gold);font-size:32px;text-shadow:0 2px 10px #000}.tagline{margin:8px 0 0;color:#f2dfb4;font-size:14px}
+.section-label{display:flex;align-items:center;gap:10px;margin:24px 4px 12px;color:var(--gold);font-size:14px;font-weight:bold}
+.section-label:before,.section-label:after{content:"";height:1px;background:linear-gradient(90deg,transparent,#b98b35);flex:1}
+.links{display:grid;gap:12px}
+.link{display:flex;align-items:center;gap:14px;min-height:78px;padding:13px 15px;border:1px solid #c89e4e;border-radius:18px;text-decoration:none;color:var(--cream);background:linear-gradient(110deg,#49251a,#25130f);box-shadow:0 7px 18px #0005}
+.link:active{transform:scale(.985)}.icon-wrap{width:49px;height:49px;flex:0 0 49px;border-radius:15px;display:grid;place-items:center;background:#e7c36c18;border:1px solid #e7c36c66;color:var(--gold)}
+.icon-wrap svg{width:28px;height:28px;display:block}.link-copy{min-width:0;flex:1}.link-title{display:block;font-size:17px;font-weight:bold;color:#ffedc5}.link-sub{display:block;margin-top:5px;font-size:12px;line-height:1.5;color:#d9c49a}.chevron{color:var(--gold2);font-size:23px}
+.menu-logo{width:49px;height:49px;flex:0 0 49px;border-radius:50%;display:grid;place-items:center;text-align:center;border:2px solid var(--gold);background:radial-gradient(circle,#70431f,#24120d 72%);color:var(--gold);font-size:12px;font-weight:900;line-height:1.15}
+.menu-panel{margin-top:23px;padding:14px;border:1px solid #c89e4e;border-radius:20px;background:linear-gradient(145deg,#2c1911,#160e0b);box-shadow:0 12px 30px #0007}
+.menu-heading{text-align:center;color:var(--gold);font-size:20px;margin:3px 0 13px}.menu-panel img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #b98b3566}
+.tip{text-align:center;color:#cbb98e;font-size:11px;line-height:1.8;margin:17px 8px 0}.footer{text-align:center;color:#a88c5b;font-size:11px;margin-top:20px}
+</style></head>
+<body><main>
+<header class="hero"><div class="brand-mark"><span>كباب<br>صلاح</span></div><h1>كباب صلاح</h1><p class="tagline">أصل الكباب.. أصل الطعم</p></header>
+<div class="section-label">تواصل واطلب وادفع بسهولة</div>
+<section class="links">
+<a class="link" href="https://www.facebook.com/share/1N3LEWeHmm/" target="_blank" rel="noopener">
+<span class="icon-wrap"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4z"/></svg></span>
+<span class="link-copy"><span class="link-title">فيسبوك</span><span class="link-sub">تابع أخبار وعروض كباب صلاح</span></span><span class="chevron">‹</span></a>
+<a class="link" href="#menu"><span class="menu-logo">كباب<br>صلاح</span><span class="link-copy"><span class="link-title">منيو كباب صلاح</span><span class="link-sub">شاهد الأصناف والأسعار</span></span><span class="chevron">‹</span></a>
+<a class="link" href="https://ipn.eg/S/sameh.youssef4681/instapay/10jdOi" target="_blank" rel="noopener">
+<span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="5" width="18.4" height="14" rx="3"/><path d="M3 9h18M7 15h3m4 0h3"/></svg></span>
+<span class="link-copy"><span class="link-title">InstaPay</span><span class="link-sub">سامح يوسف · sameh.youssef4681@instapay</span></span><span class="chevron">‹</span></a>
+<button class="link" type="button" onclick="copyWallet()" style="width:100%;text-align:right;font-family:inherit;cursor:pointer">
+<span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="3"/><path d="M3 9h18M16 14h2"/></svg></span>
+<span class="link-copy"><span class="link-title">اتصالات كاش</span><span class="link-sub">اضغط لنسخ رقم المحفظة · 01111173444</span></span><span class="chevron">‹</span></button>
 </section>
-<section class="menu" id="menu"><h2>منيو كباب صلاح</h2><img src="menu.jpg" alt="منيو كباب صلاح كاملة"></section>
-<p class="note">في حالة عدم فتح تطبيق الدفع تلقائياً، استخدم بيانات المستفيد الظاهرة داخل التطبيق وتأكد من الاسم قبل تأكيد التحويل.</p>
-</main>
-</body>
-</html>
+<section class="menu-panel" id="menu"><h2 class="menu-heading">منيو كباب صلاح</h2><img src="menu.jpg" alt="منيو كباب صلاح"></section>
+<p class="tip">قبل تأكيد أي تحويل، راجع اسم المستفيد والمبلغ داخل تطبيق الدفع.</p><div class="footer">© كباب صلاح</div>
+</main><script>
+function copyWallet(){const n='01111173444';if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(n).then(()=>alert('تم نسخ رقم محفظة اتصالات كاش: '+n)).catch(()=>alert('رقم محفظة اتصالات كاش: '+n));}else{alert('رقم محفظة اتصالات كاش: '+n);}}
+</script></body></html>
